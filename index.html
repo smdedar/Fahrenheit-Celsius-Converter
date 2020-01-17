@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fahrenheit to Centigrade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h2Fahrenheit to Centigrade</h2>
+        <div class="fv">
+            <h3>Fahrenheit Value</h3>
+            <input onkeyup="fcalculation()" type="number" id="fvalue" placeholder="Fahrenheit " Value>
+        </div>
+        <div class="cv">
+            <h3>Celcius Value</h3>
+            <input type="number"onkeyup="ccalculation()"  id="cvalue" placeholder="Celcius " value>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    //Fahrenheit to Celcius Convert
+    function fcalculation() {
+        var a = document.getElementById("fvalue").value;    //fahrenheit value
+        var b = (a - 32) * (5 / 9);      //convert to celcius
+        document.getElementById("cvalue").value = b.toFixed(3);
+    }
+
+    //Celcius to Fahrenheit Convert
+    function ccalculation(){
+        var a = document.getElementById("cvalue").value; 
+        var b = (a*9/5)+32
+        document.getElementById("fvalue").value = b.toFixed(3);
+    }
+</script>

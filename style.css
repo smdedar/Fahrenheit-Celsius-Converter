@@ -1,0 +1,56 @@
+.content {
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    padding-bottom: 0PX;
+    background-color: rgb(133, 189, 214);
+    box-shadow: 10px 10px 5px  rgb(80, 103, 151);
+}
+
+#fvalue {
+    width: 200px;
+    height: 30px;
+    font-size: 25px;
+    float: right;
+    text-align: center;
+}
+
+#cvalue {
+    width: 200px;
+    height: 30px;
+    font-size: 25px;
+    float: left;
+    text-align: center;
+}
+
+.fv {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cv {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+h2,h3 {
+    text-align: center;
+}
